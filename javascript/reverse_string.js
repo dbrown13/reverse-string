@@ -1,5 +1,8 @@
 function reverseString(str) {
   // type your code here
+  return str.split('').reduce((r,c) => c + r, '') //reverse string using split() method
+  
+  //return str ? reverseStr(str.substr(1)) + str[0] : str //reverse string using substr() method
 }
 
 if (require.main === module) {
